@@ -11,7 +11,3 @@ def parse_xml():
     soup = BeautifulSoup(xml_content, 'xml')
     result = soup.find("data").contents
     return str(result[0]).strip()
-
-
-if __name__ == '__main__':
-    parse_xml()
